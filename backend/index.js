@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000
 // middleware
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
   fs.readFile('./tan_all_time.json', 'utf-8', (err, data) => {
     if (err) throw err.message;
     res.send(data)
