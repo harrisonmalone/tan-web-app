@@ -25,7 +25,7 @@ const parseData = (data) => {
   })
 }
 
-fs.readFile('./tan_all_time.csv', 'utf8', (err, data) => {
+fs.readFile('./tan_all_time.csv', 'utf-8', (err, data) => {
   if (err) throw err;
   parseData(data)
 });
